@@ -1,0 +1,119 @@
+16/11/2022
+
+- got the game window to scale to screen size (but remain 9/16). 
+- FUTURE: probably do not actually want it to scale like this, set everything up 900/1600 and then
+	scale graphics all at once or sth (?) to avoid problems with setting block locations etc
+
+14/11/2022
+
+- plan: change enemy class so it can be accessed like a component from Section (like a component but
+	with more stuff)
+- the solution to this is to extend the Component class instead of having Enemy build a component (I
+	do not remember what the latter method is called). Now it is hopefully working
+- FUTURE TO-DO: have some sort of priority with horizontal and vertical collisions (it is doing both
+	at once so hitting the block on the side teleports you to the top)
+	- Also make a better scaling thing 
+
+- problem: since everything is a Component now, couldn't call the Enemy version of update() from 
+	Section::update(). solution: using virtual functions so if Component a = an Enemy, a
+	a.update() calls Enemy::update() instead of Component::update(). very cool
+- complete: got the enemy (niles fire emblem) rendering, moving, and registering collisions with the 
+	player
+	- can choose from three movement patterns: stationary, bounce off walls, or move back and
+		forth on a platform
+
+- TO-DO: get rudimentary "battle" game working upon enemy collision
+
+08/11/2022
+
+- plan: get horizontal collisions working
+- still to do in future: get enemies working
+	- this involves getting movement patterns working
+- also make a function to easily load in blocks automatically
+	- maybe store block locations in a dictionary or sth. or just a multidim array
+
+- changed mInteraction from just an int to a tuple (can store both horiz and vert collisions 
+	at once)
+- horizontal collisions are working !
+
+- QUESTION: when to make something inherit (idk if this is right word). eg Component class into
+	Enemy class. I want all the components to be in a linked list to facilitate rendering but
+	its kind of a pain in the neck because the component is hidden
+
+16/08/2022
+
+- plan: same as yesterday
+- buttons are going well. note to self: all button sprite sheets 
+    should have x number of sprites (eg 2, one for mouse over etc)
+
+
+14/08/2022
+
+- plan: create character select assets and render them. if time, 
+    learn how to get mouse clicks and put some buttons in 
+- actual results: ended up spending the whole time creating a 
+    class to load text and objects from. next time: load font 
+    using this class then complete original plan 
+
+
+13/08/2022
+
+- SOLN to pointer problem: passing a pointer into a function will 
+    create a copy of said pointer and reassign the copy, so when 
+    the function returns the original one is unchanged. the 
+    solution is to pass the pointer by reference (in the fn 
+    prototype, instead of int* foo it would be int*& foo, and 
+    you just pass the pointer as normal). now everything works
+- results today: done viewport & texture rendering parts of 
+    tutorial 
+- next steps: draw state diagram for character select screen 
+
+12/08/2022
+
+- trying to render fred as a texture, but it is not working. 
+    i know it has something to do with passing a pointer to 
+    a function. used debug tool and figured out everything is 
+    working except that the pointer is not changed upon fn 
+    exit.
+
+
+11/08/2022
+
+- last time also did some work on 'adventures of fonn' in 
+    parallel with tutorial: load-in screen and 'press enter'
+
+- this time: character selection (practice with sprites & 
+    animation, corresponding to tutorial parts ___)
+
+
+08/08/2022
+
+- re-reading part one of tutorial: if 'Cannot open include file:',
+    it doesn't know where the header files are. there is an 
+    option in project properties where you can include directories
+    that you want. you need to include the directory where you
+    put the library when you downloaded it
+
+- PART 2: loading an image into window. having a lot of trouble
+    doing this. getting an error 'SDL error: Parameter 'src' is 
+    invalid'.
+    - SOLN: it was some sort of pathing issue. i just moved the 
+    actual bmp file from downloads into the directory where the 
+    .exe is (C:\Users\Miles\source\repos\SDLtutorial\x64\Debug\) 
+    and then absolute pathed also since even after doing that 
+    relative pathing did not work. note: when adding a file it 
+    doesn't actually add it to the path lol. I also had to add 
+    the file to project and move it out of "Resource files". not 
+    sure if that made a difference though it might just have been 
+    the absolute pathing. :/
+
+- PART 3: event handling (this is user input etc)
+
+
+06/08/2022
+
+- set up new github account and added an ssh key 
+    (in Users/Miles/.ssh/)
+- SDL2: its like psychopy in that it is a library that provides
+    access to audio and keyboard etc stuff that is useful in 
+    game dev. has cross-platform support

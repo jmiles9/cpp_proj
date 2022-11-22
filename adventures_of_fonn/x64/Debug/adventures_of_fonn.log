@@ -1,0 +1,7 @@
+﻿  training.cpp
+C:\Users\Miles\Desktop\Projects\cpp_proj\adventures_of_fonn\training.cpp(114,30): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+C:\Users\Miles\Desktop\Projects\cpp_proj\adventures_of_fonn\training.cpp(115,30): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+C:\Users\Miles\Desktop\Projects\cpp_proj\adventures_of_fonn\training.cpp(116,30): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+C:\Users\Miles\Desktop\Projects\cpp_proj\adventures_of_fonn\training.cpp(117,30): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+C:\Users\Miles\Desktop\Projects\cpp_proj\adventures_of_fonn\training.cpp(234,32): warning C4244: '=': conversion from 'Uint32' to 'float', possible loss of data
+  adventures_of_fonn.vcxproj -> C:\Users\Miles\Desktop\Projects\cpp_proj\adventures_of_fonn\x64\Debug\adventures_of_fonn.exe

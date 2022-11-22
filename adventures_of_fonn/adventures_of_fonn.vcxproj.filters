@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Resource Files\Char Select">
+      <UniqueIdentifier>{6b037f06-1761-4eba-b0f9-5e04b75a90d5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Fonts">
+      <UniqueIdentifier>{c623ee2f-3fd2-44e7-825e-862558757806}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Training">
+      <UniqueIdentifier>{c80f027d-51d5-4761-b415-c1c10e10ebee}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Training\maps">
+      <UniqueIdentifier>{22037b3a-c46a-4848-b5ec-cc3deda4d84b}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Source.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="char_select.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="misc.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="LTexture.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="LButton.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="training.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="stuff.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Resource Files\welcometoubc2.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resource Files\acceptjob.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resource Files\enter.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resource Files\Char Select\fredbody.png">
+      <Filter>Resource Files\Char Select</Filter>
+    </Image>
+    <Image Include="Resource Files\Char Select\buttons1.png">
+      <Filter>Resource Files\Char Select</Filter>
+    </Image>
+    <Image Include="Resource Files\acceptjob.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resource Files\enter.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resource Files\welcometoubc2.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resource Files\Training\platforms1.png">
+      <Filter>Resource Files\Training</Filter>
+    </Image>
+    <Image Include="Resource Files\Training\niles.png">
+      <Filter>Resource Files\Training</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="misc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="LTexture.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="LButton.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="char_select.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="training.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="stuff.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Font Include="Resource Files\Fonts\LDFComicSans.ttf">
+      <Filter>Resource Files\Fonts</Filter>
+    </Font>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="Resource Files\Training\maps\map1_training.txt">
+      <Filter>Resource Files\Training\maps</Filter>
+    </Text>
+  </ItemGroup>
+</Project>

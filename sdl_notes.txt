@@ -1,0 +1,28 @@
+Event handling:
+
+- bool quit = false; declaring a quit flag to see if user has quit
+    (example of a flag)
+- SDL_Event: an SDL event is like a key press, mouse motion, etc. 
+    - SDL_Event e;
+    e has property 'type', which u can get the type of event from
+    eg. SDL_QUIT that is the quitting action. 
+    events are stored in a queue and processed in the order that 
+    they are entered in
+- SDL_PollEvent: allows u to find out the most recent event from
+    the event queue (pops the next item off the queue)
+
+- SDL_ConvertSurface: after loading in an image, it converts it 
+    to the right format so that it doesn't have to be converted 
+    every time it is used. (think converting to greyscale at the 
+    start instead of converting every time)
+
+-SDL_Texture: texture is rendered using hardware so it is a lot 
+    faster than rendering an image (this uses software). however 
+    i think it is easier to modify an image than texture ?
+
+
+Window stuff:
+- pretty much you need to load a surface, and then choose which
+    surface you want based on what's going on (ie user input). 
+    this is like in psychopy when you call win.flip() after 
+    deciding what is going to be on the window

@@ -1,0 +1,2 @@
+xposition,yposition,width,height,textureoption
+300,850,200,50,0

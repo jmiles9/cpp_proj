@@ -1,0 +1,30 @@
+Common defintions:
+
+- HEADER FILE: this tells the code what functions are used  
+
+- LIBRARY FILE: this keeps the addresses of functions. to use this
+    you have to download the library and then include the directory
+    in the project properties.
+
+- LINKER: resolves references, links files together so they can
+    use functions etc etc (??)
+
+
+
+Other notes:
+
+- Namespaces: (i think) if there are multiple functions named the 
+    same, ie "foo()" in the std library and "foo()" in the bar 
+    library, then you specify by doing "std::foo()" or "bar::foo()" 
+    but if you need to do that a lot, you can just say 
+    "using namespace std" so it autofills the std:: part i think
+
+- Basic steps to add library:
+    1) Include header (.h) files in "include directories" 
+        eg. ...\...\include 
+    2) Tell it what library to use in "linker/additional dependencies:
+        eg. "SDL2.lib"
+    3) Tell it where to find the lib files in "library directories"
+        eg. ...\lib\x64
+    4) Tell windows where to find .dll by setting an environment
+        variable. (same direc as in 3), but add to windows path)
